@@ -1,0 +1,36 @@
+{
+  "test1": [
+    {
+      "description": "Passing valid country names in input list",
+      "countrylist": ["UNITED_STATES", "INDIA", "CANADA"]
+    },
+    {
+      "description": "Passing one invalid country names in input list to get filter",
+      "countrylist": ["german", "London", "egypt"]
+    },
+    {
+      "description": "Passing only one country name as input list to get filter",
+      "countrylist": ["India"]
+    },
+    {
+      "description": "Passing EmptyList",
+      "countrylist": [""]
+    },
+    {
+      "description": "Passing one country name as EmptyList",
+      "countrylist": ["United_States","","german"]
+    },
+    {
+      "description": "EqualsIgnoreCase",
+      "countrylist": ["United_States", "india", "CANADA"]
+    },
+    {
+      "description": "TrimSpace at starting and ending position",
+      "countrylist": [" United_States", "india ", "  CANADA "]
+    },
+    {
+      "description": "PartialCheck",
+      "countrylist": [" United", "indi ", "  CANA "]
+    }
+  ]
+}
